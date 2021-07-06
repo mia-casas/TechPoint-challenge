@@ -7,6 +7,7 @@ import{
     NavLink
 } from 'reactstrap';
 import Auth from './SignUp'
+import User from './User'
 
 const Landing = () => {
     return(
@@ -18,8 +19,8 @@ const Landing = () => {
                 <Nav className='ml-auto' navbar>
 
                     <form class="container-fluid justify-content-start">
-                    <button class="btn btn-outline-success me-2" type="button">Sign Up</button>
-                    <button class="btn btn-outline-success me-2" type="button">Log In</button>
+                    <button class="btn btn-outline-info me-2" type="button">Sign Up</button>
+                    <button class="btn btn-outline-info me-2" type="button">Log In</button>
                     </form>
 
                 </Nav>
@@ -48,6 +49,7 @@ const Landing = () => {
             </div>
 
             <Auth />
+            <User />
         </div>
     );
 };
