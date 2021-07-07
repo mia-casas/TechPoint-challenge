@@ -6,26 +6,12 @@ import{
     NavItem,
     NavLink
 } from 'reactstrap';
-import Auth from './SignUp'
+
 import User from './User'
 
 const Landing = () => {
     return(
         <div>
-            <div id="landing-header">
-            <Navbar className='header'>
-                <NavbarBrand href ='/'>Quick Scripts</NavbarBrand>
-                <NavLink href=''>User Dashboard</NavLink>
-                <Nav className='ml-auto' navbar>
-
-                    <form class="container-fluid justify-content-start">
-                    <button class="btn btn-outline-info me-2" type="button">Sign Up</button>
-                    <button class="btn btn-outline-info me-2" type="button">Log In</button>
-                    </form>
-
-                </Nav>
-            </Navbar>
-            </div>
 
             <div id="landing-body">
 
@@ -48,8 +34,6 @@ const Landing = () => {
 
             </div>
 
-            <Auth />
-            <User />
         </div>
     );
 };
