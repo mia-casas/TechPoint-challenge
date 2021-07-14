@@ -1,4 +1,5 @@
 import React, {useState} from 'react';
+import {Button, Form, Label, Input} from 'reactstrap'
 
 
 const Auth = (props) => {
@@ -26,15 +27,15 @@ const Auth = (props) => {
 
     const signUpFields = () => {
         return !login ? (
-            <div>
-                <label htmlFor="firstName">First Name</label>
+            <div >
+                <label htmlFor="firstName">First Name:</label>
                 <br />
                 <input type="text" id="firstName" value={firstName}
                 onChange={(e) => setFirstName(e.target.value)}></input>
 
                 <br />
 
-                <label htmlFor="lastName">Last Name</label>
+                <label htmlFor="lastName">Last Name:</label>
                 <br />
                 <input type="text" id="lastName" value={lastName}
                 onChange={(e) => setLastName(e.target.value)}></input>
@@ -67,11 +68,11 @@ const Auth = (props) => {
     }
 
     return(
-        <div>
-            <form onSubmit={(e) => handleSubmit(e)}>
+        <div class="box">
+            <Form onSubmit={(e) => handleSubmit(e)}>
             <h1>{title()}</h1>
             {signUpFields()}
-            <label htmlFor = "email">Email:</label>
+            <Label htmlFor = "email">Email:</Label>
             <br />
             <input type="text" id="email" value={email} onChange={(e) => { return setEmail(e.target.value), console.log(e) }}/>
 
@@ -81,10 +82,10 @@ const Auth = (props) => {
             <input type="password" id="password" value={password} 
             onChange ={(e) => setPassword(e.target.value)} />
             <br />
-            <button onClick={(e) => loginToggle(e)}>Login/Signup Toggle</button>
+            <button class="login-button" onClick={(e) => loginToggle(e)}>Login/Signup Toggle</button>
             <br />
-            <button type="submit">Submit User Data</button>
-            </form>
+            <button class="login-button" type="submit">Submit User Data</button>
+            </Form>
 
         </div>
     )

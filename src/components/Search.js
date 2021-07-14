@@ -13,9 +13,25 @@ const Search = () => {
     }
     
     return(
-        <div class="input-group mb-3">
+        <div>
+
+        
+        <div class="input-group mb-3" id="search">
         <input type="text" class="form-control" placeholder="Type a medication" aria-label="Example text with button addon" aria-describedby="button-addon1" />
-        <button class="btn btn-outline-secondary" type="button" id="button-addon1">Search</button>
+        <button class="btn btn-secondary" type="button" id="button-addon1">Search</button>
+        </div>
+
+        <div id="drug-container">
+            <ul>
+            <h3>Popular Searches</h3>
+                <li> -  Lipitor</li>
+                <li> -  Levothyroxine</li>
+                <li> -  Norvasc</li>
+                <li> -  Zoloft</li>
+                <li> -  Cozaar</li>
+            </ul>
+        </div>
+
         </div>
     )
 }

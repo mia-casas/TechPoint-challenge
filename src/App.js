@@ -8,7 +8,8 @@ import{
   NavbarBrand,
   Nav,
   NavItem,
-  NavLink
+  NavLink,
+  Button
 } from 'reactstrap';
 import {Route, Link, Switch, BrowserRouter as Router} from 'react-router-dom'
 
@@ -23,13 +24,13 @@ function App() {
     <div className="App">
       <Router>
                 <Navbar className='header'>
-                <NavbarBrand ><Link to="/">Quick Scripts</Link></NavbarBrand>
-                <NavLink href='/dashboard'>App Search</NavLink>
-                <NavLink href='/account'>My Account</NavLink>
+                <NavbarBrand ><Link to="/" id="logo">Quick Scripts</Link></NavbarBrand>
+                <NavLink className="nav-links" href='/dashboard'>App Search</NavLink>
+                <NavLink className="nav-links" href='/account'>My Account</NavLink>
                 <Nav className='ml-auto' navbar>
 
                     <form class="container-fluid justify-content-start">
-                    <button class="btn btn-outline-info me-2" type="button"><Link to = '/auth'>Sign Up / Login</Link></button>
+                    <Button id="login-button" type="button"><Link id="login-link" to = '/auth'>Sign Up or Login</Link></Button>
                     </form>
 
                 </Nav>
