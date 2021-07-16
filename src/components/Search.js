@@ -1,4 +1,5 @@
 import React, {useState} from 'react'
+import {Media} from 'reactstrap'
 
 const Search = () => {
     const [search, setSearch] = useState({
@@ -21,7 +22,9 @@ const Search = () => {
         <button class="btn btn-secondary" type="button" id="button-addon1">Search</button>
         </div>
 
-        <div id="drug-container">
+        <div class="container">
+  <div class="row">
+    <div id="drug-container" class="col">
             <ul>
             <h3>Popular Searches</h3>
                 <li> -  Lipitor</li>
@@ -30,9 +33,20 @@ const Search = () => {
                 <li> -  Zoloft</li>
                 <li> -  Cozaar</li>
             </ul>
-        </div>
+      
+    </div>
+    <div class="col">
+      <h4 class="results" id="pharmacies">Pharmacy</h4>
+    </div>
+    <div class="col" >
+      <h4 class="results">Cost</h4>
+    </div>
+  </div>
+</div>
+
 
         </div>
+            
     )
 }
 

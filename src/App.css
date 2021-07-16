@@ -5,8 +5,8 @@ body{
 .App {
   text-align: center;
   font-family: 'Poppins', sans-serif;
-  font-weight: bolder;
-  font-size: 20px;
+  font-weight: lighter;
+  font-size: 18px;
 }
 a{
   text-decoration: none;
@@ -14,17 +14,14 @@ a{
   font-weight: bold;
   font-family: 'Noto Sans', sans-serif;
 }
-
-/* .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-} */
+#footer{
+  position: fixed;
+  bottom: 0;
+  margin:auto;
+  width: 100%;
+  color: #364e7e !important;
+  margin-bottom: 15px;
+}
 
 /* ----- Navbar ------- */
 .header{
@@ -61,7 +58,7 @@ a{
 #landing-title{
   font-family: 'Poppins', sans-serif;
   font-weight: bolder;
-  font-size: 3em;
+  font-size: 3.5em;
   /* font-weight: bold; */
   background-color: #0498bd;
   /* #392A1D; */
@@ -77,6 +74,7 @@ a{
   width: 55%;
   margin: auto;
   border-radius: 6px;
+  padding-top: 6px;
 }
 #search{
   margin-top: 70px !important;
@@ -93,12 +91,36 @@ li{
 #drug-container{
   border: solid 3px #6D757D;
   border-radius: 10%;
-  margin-left: 60px;
-  width: 25%;
+  /* width: 10px !important; */
   padding:20px;
+  display: inline-flex;
+  margin-top: 20px;
+  margin-right: 15%;
+}
+.results{
+  background-color: #364e7e;
+  width: 10em;
+  border-radius: 5px;
+  color: #f0fafc;
+  margin-top:10%;
+  margin-left: -80px;
 }
 
 /* ----- User Account ------- */
+#user-image{
+  height: 200px; 
+  display: inline-block;
+  margin-right: 80px;
+  margin-top: -80px;
+}
+#user-info{ 
+  display: inline-block;
+  margin-left: 80px;
+  margin-top: 50px;
+} 
+#user-buttons{
+  margin: 50px;
+}
 
 /* ----- Signup/Login ------- */
 .box{
@@ -106,7 +128,8 @@ li{
   border-radius: 10%;
   width: 25%;
   margin:auto;
-  padding:25px;
+  padding: 18px 15px;
+  margin-bottom: 20px;
 }
 .login-button{
   margin-top: 25px !important;

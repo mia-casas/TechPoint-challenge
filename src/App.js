@@ -9,7 +9,8 @@ import{
   Nav,
   NavItem,
   NavLink,
-  Button
+  Button,
+  Row,
 } from 'reactstrap';
 import {Route, Link, Switch, BrowserRouter as Router} from 'react-router-dom'
 
@@ -43,6 +44,11 @@ function App() {
               <Route exact path='/account'><User /></Route>
             </Switch>
         </Router>
+        <footer id="footer">
+            <Row>
+                <a id="footer" target="_blank" href="https://github.com/mia-casas/TechPoint-challenge">&copy; 2021 Quick Scripts</a> 
+            </Row>
+        </footer>
     </div>
   );
 }
