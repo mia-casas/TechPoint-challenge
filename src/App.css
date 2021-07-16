@@ -105,6 +105,9 @@ li{
   margin-top:10%;
   margin-left: -80px;
 }
+.results-lists{
+  font-size: 25px;
+}
 
 /* ----- User Account ------- */
 #user-image{

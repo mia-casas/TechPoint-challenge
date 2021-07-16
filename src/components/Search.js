@@ -18,7 +18,7 @@ const Search = () => {
 
         
         <div class="input-group mb-3" id="search">
-        <input type="text" class="form-control" placeholder="Type a medication" aria-label="Example text with button addon" aria-describedby="button-addon1" />
+        <input type="text" class="form-control" placeholder="Lipitor" aria-label="Example text with button addon" aria-describedby="button-addon1" />
         <button class="btn btn-secondary" type="button" id="button-addon1">Search</button>
         </div>
 
@@ -36,10 +36,24 @@ const Search = () => {
       
     </div>
     <div class="col">
-      <h4 class="results" id="pharmacies">Pharmacy</h4>
+            <ul class="results-lists">
+            <h3 class="results" id="pharmacies">Pharmacy</h3>
+                <li>Meijer </li>
+                <li>Costco</li>
+                <li>CVS</li>
+                <li>Walgreens</li>
+                <li>Walmart</li>
+            </ul>
     </div>
     <div class="col" >
-      <h4 class="results">Cost</h4>
+             <ul class="results-lists">
+             <h3 class="results">Cost</h3>
+                <li>$9.45</li>
+                <li>$14.99</li>
+                <li>$20.40</li>
+                <li>$21.15</li>
+                <li>$21.15</li>
+            </ul>
     </div>
   </div>
 </div>
