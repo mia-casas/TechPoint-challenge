@@ -59,14 +59,14 @@ a{
 }
 #landing-title{
   font-family: 'Poppins', sans-serif;
-  font-weight: bolder;
+  /* font-weight: bolder; */
   font-size: 3.5em;
   /* font-weight: bold; */
   background-color: #0498bd;
   /* #392A1D; */
   /* #453e2e; */
   /* #504A47; */
-  opacity: 95%;
+  /* opacity: 95%; */
   padding-bottom: 8px;
   border-radius: 5px;
   z-index: 1;
