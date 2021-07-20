@@ -1,5 +1,6 @@
 import React, {useState} from 'react'
-import {Media} from 'reactstrap'
+import {Media, Button} from 'reactstrap'
+import {FaPrescription} from 'react-icons/fa'
 
 const Search = () => {
     const [search, setSearch] = useState({
@@ -48,11 +49,11 @@ const Search = () => {
     <div class="col" >
              <ul class="results-lists">
              <h3 class="results">Cost</h3>
-                <li>$9.45</li>
-                <li>$14.99</li>
-                <li>$20.40</li>
-                <li>$21.15</li>
-                <li>$21.15</li>
+                <li id="move-right">$9.45  <Button id="select-rx"><FaPrescription /></Button></li>
+                <li id="move-right">$14.99 <Button id="select-rx"><FaPrescription /></Button></li>
+                <li id="move-right">$20.40 <Button id="select-rx"><FaPrescription /></Button></li>
+                <li id="move-right">$21.15 <Button id="select-rx"><FaPrescription /></Button></li>
+                <li id="move-right">$21.15 <Button id="select-rx"><FaPrescription /></Button></li>
             </ul>
     </div>
   </div>

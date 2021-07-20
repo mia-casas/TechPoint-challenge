@@ -47,14 +47,16 @@ a{
   border-color: lightgray;
 }
 #login-button:hover{
-  background-color:#038cae;
-  opacity:300%;
+  background-color:#007896;
 }
 #login-link:hover{
   color:white !important;
 }
 
 /* ----- Landing ------- */
+#main-image{
+  z-index: -1;
+}
 #landing-title{
   font-family: 'Poppins', sans-serif;
   font-weight: bolder;
@@ -70,7 +72,6 @@ a{
 }
 .card-text{
   background-color: #6D757D;
-  opacity: 500%;
   width: 55%;
   margin: auto;
   border-radius: 6px;
@@ -107,6 +108,21 @@ li{
 }
 .results-lists{
   font-size: 25px;
+  
+}
+#select-rx{
+  color: #0498bd;
+  background-color: white;
+  margin-left:55px;
+  margin-right: 60px;
+  border-color: rgb(180, 206, 232);
+  
+}
+#select-rx:hover{
+  background-color: rgb(180, 206, 232);
+}
+#move-right{
+  text-align: right;
 }
 
 /* ----- User Account ------- */
@@ -127,9 +143,9 @@ li{
 
 /* ----- Signup/Login ------- */
 .box{
-  border: solid 3px #0498bd;
+  border: solid 3px #94a2a5;
   border-radius: 10%;
-  width: 25%;
+  width: 50%;
   margin:auto;
   padding: 18px 15px;
   margin-bottom: 20px;
@@ -142,6 +158,5 @@ li{
   border-radius: 5px;
 }
 .login-button:hover{
-  background-color:#60686f;
-  opacity:300%
+  background-color:#535a60;
 }

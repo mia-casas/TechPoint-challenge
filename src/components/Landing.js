@@ -15,7 +15,7 @@ const Landing = () => {
 
             <div id="landing-body">
 
-                <div class="card bg-light text-white">
+                <div class="card bg-light text-white" id="main-image">
                 <img  src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80" class="card-img" alt="pharmicist using technology for prescription pickups" />
 
                 <div class="card-img-overlay">
