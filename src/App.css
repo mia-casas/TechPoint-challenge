@@ -141,6 +141,12 @@ li{
 #user-buttons{
   margin: 50px;
 }
+th{
+  padding-right: 20px;
+}
+table{
+  margin-bottom: 50px;
+}
 
 /* ----- Signup/Login ------- */
 .box{
