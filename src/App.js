@@ -26,7 +26,7 @@ function App() {
       <Router>
                 <Navbar className='header'>
                 <NavbarBrand ><Link to="/" id="logo">Quick Scripts</Link></NavbarBrand>
-                <NavLink className="nav-links" href='/dashboard'>App Search</NavLink>
+                <NavLink className="nav-links" href='/dashboard'>Drug Search</NavLink>
                 <NavLink className="nav-links" href='/account'>My Account</NavLink>
                 <Nav className='ml-auto' navbar>
 
