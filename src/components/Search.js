@@ -1,4 +1,4 @@
-import React, {useState, render} from 'react'
+import React, {useState, useEffect} from 'react'
 import {Media, Button} from 'reactstrap'
 import {FaPrescription} from 'react-icons/fa'
 
@@ -13,6 +13,22 @@ const Search = () => {
     //         drug: drug.value
     //     })
     // }
+
+    const [lat, setLat] = useState('');
+    const [lon, setLon] = useState('');
+   
+      
+    const fetchLocation = () => {
+        navigator.geolocation.getCurrentPosition(function(position) {
+          setLat(position.coords.latitude);
+          setLon(position.coords.longitude);
+          console.log(`This is my location ${lat} and ${lon}`)
+        });
+    }
+
+    useEffect(() => {
+        fetchLocation();
+    }, [])
 
 
 
